@@ -13,6 +13,9 @@ class UserProfile(db.Model):
     last_name = db.Column(db.String(80))
     username = db.Column(db.String(80), unique=True)
 
+
+
+
     def is_authenticated(self):
         return True
 
